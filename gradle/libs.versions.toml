@@ -1,0 +1,44 @@
+[versions]
+accompanistPermissions = "0.35.1-alpha"
+agp = "8.6.0-alpha03"
+decompose = "3.0.0"
+extensionsCompose = "3.0.0"
+kotlin = "1.9.23"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+mapKit = "4.6.1-full"
+googlePlayServices = "21.2.0"
+yandexStyleProvider = "4.6.1"
+
+[libraries]
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation" }
+androidx-material = { module = "androidx.compose.material:material" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-ui = { module = "androidx.compose.ui:ui" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+android-navkit = { group = "com.yandex.android", name = "maps.mobile", version.ref = "mapKit" }
+android-google-play-services = { group = "com.google.android.gms", name = "play-services-location", version.ref = "googlePlayServices" }
+yandex-style-auto-navigation = { group = "com.yandex.mapkit.styling", name = "automotivenavigation", version.ref = "yandexStyleProvider" }
+yandex-style-road-events = { group = "com.yandex.mapkit.styling", name = "roadevents", version.ref = "yandexStyleProvider" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
